@@ -23,66 +23,111 @@
           GitHub repository</a
         >
       </section>
-      <section class="card" aria-labelledby="caesar-cipher-title">
-        <h2 id="caesar-cipher-title">Caesar Cipher</h2>
-        <div
-              class="projects__card__container"
-          role="group"
-          aria-labelledby="caesar-cipher-title"
-        >
-          <form
-                class="projects__card__container__inputs"
-            id="cipher-form"
-            aria-label="Caesar cipher inputs"
+      <section class="projects">
+        <aside class="projects__side-bar">
+          <h2>Repositories</h2>
+          <a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/caesarsCipher.js"
+            target="_blank"
+            >Caesar cipher</a
           >
-            <div class="form-group">
-              <input
-                type="text"
-                name="cipher"
-                id="cipher"
-                placeholder="Insert cipher to be encrypted"
-                    class="projects__card__container__input"
-                aria-labelledby="cipher-label"
-                aria-required="true"
-                autocomplete="off"
-              />
-              <label for="cipher" class="form-label" id="cipher-label"
-                >Insert cipher to be encrypted</label
+          <a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/checkIfContainsPattern.js"
+            target="_blank"
+            >Check if contains pattern</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/counterChangesPattern.js"
+            target="_blank"
+            >Counter changes pattern</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/dayOfProgramer.js"
+            target="_blank"
+            >Day of programer</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/findDuplicities.js"
+            target="_blank"
+            >Find Duplicities</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/findMissingElements.js"
+            target="_blank"
+            >Find missing elements</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/insertionToSortArray.js"
+            target="_blank"
+            >Insertion to sort array</a
+          ><a href="">Pangram</a
+          ><a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/searchPositionOfSum.js"
+            target="_blank"
+            >Search position of sum</a
+          >
+          <a
+            href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/sortStringNumbers.js"
+            target="_blank"
+            >Sort string numbers</a
+          >
+        </aside>
+        <div class="projects__cards">
+          <div class="projects__card" aria-labelledby="caesar-cipher-title">
+            <h2 id="caesar-cipher-title">Caesar Cipher</h2>
+            <div
+              class="projects__card__container"
+              role="group"
+              aria-labelledby="caesar-cipher-title"
+            >
+              <form
+                class="projects__card__container__inputs"
+                id="cipher-form"
+                aria-label="Caesar cipher inputs"
               >
-            </div>
-            <div class="form-group">
-              <input
-                type="number"
-                name="factorRotation"
-                id="factorRotation"
-                placeholder="Insert factor rotaion"
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="cipher"
+                    id="cipher"
+                    placeholder="Insert cipher to be encrypted"
                     class="projects__card__container__input"
-                aria-describedby="factorRotation-label"
-                aria-required="true"
-              />
+                    aria-labelledby="cipher-label"
+                    aria-required="true"
+                    autocomplete="off"
+                  />
+                  <label for="cipher" class="form-label" id="cipher-label"
+                    >Insert cipher to be encrypted</label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="factorRotation"
+                    id="factorRotation"
+                    placeholder="Insert factor rotaion"
+                    class="projects__card__container__input"
+                    aria-describedby="factorRotation-label"
+                    aria-required="true"
+                  />
                   <label
                     for="cipher"
                     class="form-label"
                     id="factorRotation-label"
-                >Insert factor rotation</label
-              >
-            </div>
-            <button
-              type="button"
-              class="button-primary"
-              id="encrypt-button"
-              onclick="caesarCipher()"
-              aria-label="Encrypt cipher text"
-            >
-              Encrypt
-            </button>
-          </form>
-          <div
+                    >Insert factor rotation</label
+                  >
+                </div>
+                <button
+                  type="button"
+                  class="button-primary"
+                  id="encrypt-button"
+                  onclick="caesarCipher()"
+                  aria-label="Encrypt cipher text"
+                >
+                  Encrypt
+                </button>
+              </form>
+              <div
                 class="projects__card__container__output"
-            aria-live="polite"
-            role="region"
-            aria-label="Encryption result"
-          ></div>
+                aria-live="polite"
+                role="region"
+                aria-label="Encryption result"
+              ></div>
             </div>
           </div>
         </div>
