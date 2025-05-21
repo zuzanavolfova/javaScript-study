@@ -29,23 +29,27 @@ h3 {
 }
 
 .projects {
-  padding: 18px;
+  padding: 0 18px;
   display: flex;
   height: 100%;
   background-color: var(--light-background);
 }
 .projects__side-bar {
-  width: 200px;
+  width: 220px;
   border-right: 2px solid var(--light-grey);
+  box-shadow: 3px 0px 6px -3px var(--light-grey);
+}
+.projects__side-bar div {
+  padding: 18px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.projects__side-bar a {
+.projects__side-bar div a {
   color: var(--text-dark-grey);
   text-decoration: none;
 }
-.projects__side-bar a:hover {
+.projects__side-bar div a:hover {
   color: var(--primary-color);
   font-weight: 600;
 }
