@@ -23,6 +23,65 @@
           GitHub repository</a
         >
       </section>
+      <section class="card" aria-labelledby="caesar-cipher-title">
+        <h2 id="caesar-cipher-title">Caesar Cipher</h2>
+        <div
+          class="card__container"
+          role="group"
+          aria-labelledby="caesar-cipher-title"
+        >
+          <form
+            class="card__container__inputs"
+            id="cipher-form"
+            aria-label="Caesar cipher inputs"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                name="cipher"
+                id="cipher"
+                placeholder="Insert cipher to be encrypted"
+                class="card__container__input"
+                aria-labelledby="cipher-label"
+                aria-required="true"
+                autocomplete="off"
+              />
+              <label for="cipher" class="form-label" id="cipher-label"
+                >Insert cipher to be encrypted</label
+              >
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                name="factorRotation"
+                id="factorRotation"
+                placeholder="Insert factor rotaion"
+                class="card__container__input"
+                aria-describedby="factorRotation-label"
+                aria-required="true"
+              />
+              <label for="cipher" class="form-label" id="factorRotation-label"
+                >Insert factor rotation</label
+              >
+            </div>
+            <button
+              type="button"
+              class="button-primary"
+              id="encrypt-button"
+              onclick="caesarCipher()"
+              aria-label="Encrypt cipher text"
+            >
+              Encrypt
+            </button>
+          </form>
+          <div
+            class="card__container__output"
+            aria-live="polite"
+            role="region"
+            aria-label="Encryption result"
+          ></div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer">

@@ -27,6 +27,59 @@ h3 {
   color: var(--primary-color);
 }
 
+.card {
+  padding: 16px;
+  margin: 20px;
+  max-width: 480px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.card h2 {
+  text-align: center;
+}
+.card__container {
+  display: flex;
+  margin: auto;
+}
+.card__container__inputs {
+  width: 200px;
+  margin: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card__container__input {
+  height: 36px;
+  padding: 6px 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+.card__container__output {
+  margin: auto;
+  text-align: center;
+}
+
+.button-primary {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  width: 92px;
+  height: 36px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button.clicked {
+  transform: scale(1.2);
+  background-color: var(--placeholder-color);
+}
+
 .footer {
   position: absolute;
   bottom: 0;
