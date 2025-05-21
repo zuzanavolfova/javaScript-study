@@ -12,7 +12,7 @@
     <header>
       <h1>JavaScript study project</h1>
     </header>
-    <main>
+    <main class="main">
       <section class="description">
         <span>This project contains exercises for practicing JavaScript.</span>
         <a
@@ -26,12 +26,12 @@
       <section class="card" aria-labelledby="caesar-cipher-title">
         <h2 id="caesar-cipher-title">Caesar Cipher</h2>
         <div
-          class="card__container"
+              class="projects__card__container"
           role="group"
           aria-labelledby="caesar-cipher-title"
         >
           <form
-            class="card__container__inputs"
+                class="projects__card__container__inputs"
             id="cipher-form"
             aria-label="Caesar cipher inputs"
           >
@@ -41,7 +41,7 @@
                 name="cipher"
                 id="cipher"
                 placeholder="Insert cipher to be encrypted"
-                class="card__container__input"
+                    class="projects__card__container__input"
                 aria-labelledby="cipher-label"
                 aria-required="true"
                 autocomplete="off"
@@ -56,11 +56,14 @@
                 name="factorRotation"
                 id="factorRotation"
                 placeholder="Insert factor rotaion"
-                class="card__container__input"
+                    class="projects__card__container__input"
                 aria-describedby="factorRotation-label"
                 aria-required="true"
               />
-              <label for="cipher" class="form-label" id="factorRotation-label"
+                  <label
+                    for="cipher"
+                    class="form-label"
+                    id="factorRotation-label"
                 >Insert factor rotation</label
               >
             </div>
@@ -75,11 +78,13 @@
             </button>
           </form>
           <div
-            class="card__container__output"
+                class="projects__card__container__output"
             aria-live="polite"
             role="region"
             aria-label="Encryption result"
           ></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
