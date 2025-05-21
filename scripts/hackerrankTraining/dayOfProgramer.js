@@ -11,22 +11,34 @@
  * example: dayOfProgramer(2025);
  */
 
+function dayOfProgramerBefore1918(year) {
+  if (year % 4 === 0) {
+    return `12.09.${year}`;
+  } else {
+    return `13.09.${year}`;
+  }
+}
+
+function dayOfProgramerIn1918(year) {
+  return `26.09.${year}`;
+}
+
+function dayOfProgramerAfter1918(year) {
+  if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    return `12.09.${year}`;
+  } else {
+    return `13.09.${year}`;
+  }
+}
+
 function dayOfProgramer(year) {
   if (year < 1918) {
     // Julian calendar (before 1918)
-    if (year % 4 === 0) {
-      return `12.09.${year}`;
-    } else {
-      return `13.09.${year}`;
-    }
+    dayOfProgramerBefore1918(year);
   } else if (year === 1918) {
-    return `26.09.${year}`;
+    dayOfProgramerIn1918(year);
   } else {
     // Gregorian calendar
-    if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
-      return `12.09.${year}`;
-    } else {
-      return `13.09.${year}`;
-    }
+    dayOfProgramerAfter1918(year);
   }
 }
