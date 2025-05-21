@@ -1,7 +1,7 @@
-/* TASK find how meny duplicates are in the array
+/* TASK find how many pairs are in the array
  */
 
-function findDuplicities(arr) {
+function countPairs(arr) {
   let array = [...arr];
   let result = 0;
 
