@@ -10,7 +10,7 @@ function isInputTextValid(cipher) {
   if (cipher.trim() === "") {
     addContentToUI(
       "Please enter a text to encrypt!",
-      "card__container__output"
+      ".projects__card__container__output"
     );
     return false;
   }
@@ -21,7 +21,7 @@ function isFactorRotationValid(factorRotation) {
   if (isNaN(factorRotation) || factorRotation === "") {
     addContentToUI(
       "Enter a valid number for the shift!",
-      "card__container__output"
+      ".projects__card__container__output"
     );
     return false;
   }
@@ -70,5 +70,5 @@ function caesarCipher() {
   const shiftedAlphabet = prepareShiftedAlphabet(factorRotation);
   const encryptedText = applyCaesarCipher(textToProcess, shiftedAlphabet);
 
-  addContentToUI(encryptedText, "card__container__output");
+  addContentToUI(encryptedText, ".projects__card__container__output");
 }
