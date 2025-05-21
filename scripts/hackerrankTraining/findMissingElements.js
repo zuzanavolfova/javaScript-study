@@ -4,14 +4,13 @@
  */
 
 function missingNumbers(arrA, arrB) {
-  let arrBCopy = [...arrB];
-
-  for (let i = 0; i < arrA.length; i++) {
-    let index = arrBCopy.indexOf(arrA[i]);
+  let missingElements = [...arrB];
+  arrA.forEach((item) => {
+    let index = missingElements.indexOf(item);
     if (index !== -1) {
-      arrBCopy.splice(index, 1);
+      missingElements.splice(index, 1);
     }
-  }
+  });
 
-  return arrBCopy.sort((a, b) => a - b);
+  return missingElements.sort((a, b) => a - b);
 }
