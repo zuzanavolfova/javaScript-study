@@ -7,11 +7,10 @@
 
 function findPositionOfSum(m, arr) {
   let result = [];
-  let arrData = [...arr];
 
-  for (let j = 0; j < arrData.length - 1; j++) {
-    for (let i = j + 1; i < arrData.length; i++) {
-      if (arrData[j] + arrData[i] === m) {
+  for (let j = 0; j < arr.length - 1; j++) {
+    for (let i = j + 1; i < arr.length; i++) {
+      if (arr[j] + arr[i] === m) {
         result.push([j + 1, i + 1]);
       }
     }
