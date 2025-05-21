@@ -9,7 +9,7 @@ const removeLeadingZeros = (str) => {
   return result === "" ? "0" : result;
 };
 
-function sortStringNUmber(data) {
+function sortStringNumber(data) {
   let dataFormated = [];
   for (let i = 0; i < data.length; i++) {
     dataFormated[i] = removeLeadingZeros(data[i]);
