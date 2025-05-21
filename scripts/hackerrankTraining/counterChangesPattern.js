@@ -9,10 +9,9 @@
 
 function counterChangesFromPattern(message, pattern) {
   let result = 0;
-  const patternLength = pattern.length;
 
   for (let i = 0; i < message.length; i += pattern.length) {
-    let substringData = message.substring(i, i + patternLength);
+    let substringData = message.substring(i, i + pattern.ength);
 
     for (let j = 0; j < substringData.length; j++) {
       if (substringData[j] !== pattern[j]) {
