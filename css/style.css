@@ -42,19 +42,27 @@ h3 {
   border-right: 2px solid var(--light-grey);
   box-shadow: 3px 0px 6px -3px var(--light-grey);
 }
-.projects__side-bar div {
+.projects__side-bar > div {
   padding: 18px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.projects__side-bar div a {
+.projects__side-bar > div a {
   color: var(--text-dark-grey);
   text-decoration: none;
 }
-.projects__side-bar div a:hover {
+.projects__side-bar > div a:hover {
   color: var(--primary-color);
   font-weight: 600;
+}
+.projects__side-bar__item {
+  margin-right: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects__side-bar__item__button {
+  height: 28px !important;
 }
 .projects__card {
   padding: 16px;
@@ -91,7 +99,7 @@ h3 {
   color: white;
   background-color: var(--primary-color);
   font-weight: 600;
-  width: 92px;
+  width: auto;
   height: 36px;
   cursor: pointer;
   border: 1px solid var(--primary-color);

@@ -31,11 +31,18 @@
           <h2>GitHub</h2>
           <span>See the code for each function:</span>
           <div>
-            <a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/caesarsCipher.js"
-              target="_blank"
-              >Caesar cipher</a
-            >
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/caesarsCipher.js"
+                target="_blank"
+                >Caesar cipher</a
+              ><button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleElVisibility('caesar-cipher')"
+              >
+                Try
+              </button>
+            </div>
             <a
               href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/checkIfContainsPattern.js"
               target="_blank"
@@ -76,7 +83,12 @@
           </div>
         </aside>
         <div class="projects__cards">
-          <div class="projects__card" aria-labelledby="caesar-cipher-title">
+          <div
+            class="projects__card"
+            id="caesar-cipher"
+            style="display: none"
+            aria-labelledby="caesar-cipher-title"
+          >
             <h2 id="caesar-cipher-title">Caesar Cipher</h2>
             <div
               class="projects__card__container"
