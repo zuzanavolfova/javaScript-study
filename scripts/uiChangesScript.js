@@ -1,4 +1,4 @@
-function addContentToUI(data, uiElementClass) {
-  const outputUI = document.querySelector(`.${uiElementClass}`);
+function addContentToUI(data, uiElement) {
+  const outputUI = document.querySelector(`${uiElement}`);
   outputUI.innerHTML = data;
 }
