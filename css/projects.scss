@@ -1,0 +1,84 @@
+.projects {
+  padding: 4px 18px;
+  height: 100%;
+  background-color: var(--light-background);
+  display: block;
+  @media (min-width: 650px) {
+    display: flex;
+    padding: 0 26px;
+  }
+  &__side-bar {
+    padding-left: 18px;
+    @media (min-width: 650px) {
+      width: 252px;
+      border-right: 2px solid var(--light-grey);
+      box-shadow: 3px 0px 6px -3px var(--light-grey);
+    }
+    & > div {
+      padding: 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      & a {
+        color: var(--text-dark-grey);
+        text-decoration: none;
+        &:hover {
+          color: var(--primary-color);
+          font-weight: 600;
+        }
+      }
+    }
+    &__item {
+      margin-right: 16px;
+      display: flex;
+      justify-content: space-between;
+      &__button {
+        height: 28px !important;
+      }
+    }
+  }
+
+  &__card {
+    padding: 8px;
+    margin: 18px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    @media (min-width: 650px) {
+      width: 360px;
+      padding: 16px;
+    }
+    & h2 {
+      text-align: center;
+    }
+    &__container {
+      display: block;
+      margin: auto;
+      @media (min-width: 650px) {
+        display: flex;
+      }
+      &__inputs {
+        width: 200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media (min-width: 650px) {
+          margin: 18px;
+        }
+      }
+      &__input {
+        height: 36px;
+        padding: 6px 8px;
+        border: 1px solid var(--text-light-grey);
+        border-radius: 4px;
+      }
+      &__output {
+        margin: 16px auto;
+        font-weight: 600;
+        text-align: center;
+        @media (min-width: 650px) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

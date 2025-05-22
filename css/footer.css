@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: var(--text-dark-grey);
+  margin: auto;
+  padding: 12px 0;
+  border-top: 1px solid var(--light-grey);
+}
+@media (min-width: 650px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.footer__title {
+  color: var(--text-dark-grey);
+  font-weight: 600;
+}
+.footer__link {
+  color: var(--text-dark-grey);
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}

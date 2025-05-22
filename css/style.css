@@ -12,74 +12,6 @@
   --border-radius: 6px;
 }
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--primary-color);
-  margin-left: 18px;
-}
-
-.button-primary {
-  color: white;
-  background-color: var(--primary-color);
-  font-weight: 600;
-  width: auto;
-  height: 36px;
-  cursor: pointer;
-  border: 1px solid var(--primary-color);
-  border-radius: var(--border-radius);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: white;
-  color: var(--primary-color);
-}
-
-button.clicked {
-  transform: scale(1.2);
-  background-color: var(--placeholder-color);
-}
-
-.description {
-  margin: 26px;
-  display: flex;
-  flex-direction: column;
-}
-.description a {
-  width: 160px;
-  margin: 6px 8px;
-  padding: 8px;
-  background-color: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  border: 1px solid var(--primary-color);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-.description a:hover {
-  background-color: white;
-  color: var(--primary-color);
-}
-
 .projects {
   padding: 4px 18px;
   height: 100%;
@@ -176,6 +108,29 @@ button.clicked {
   }
 }
 
+.description {
+  margin: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.description a {
+  width: 160px;
+  margin: 6px 8px;
+  padding: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.description a:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -204,4 +159,49 @@ button.clicked {
 .footer__link:hover {
   color: var(--primary-color);
   font-weight: 600;
+}
+
+.button-primary {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  width: auto;
+  height: 36px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button.clicked {
+  transform: scale(1.2);
+  background-color: var(--placeholder-color);
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  margin-left: 18px;
 }

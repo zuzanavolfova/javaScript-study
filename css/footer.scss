@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: var(--text-dark-grey);
+  margin: auto;
+  padding: 12px 0;
+  border-top: 1px solid var(--light-grey);
+  @media (min-width: 650px) {
+    position: absolute;
+    bottom: 0;
+  }
+  &__title {
+    color: var(--text-dark-grey);
+    font-weight: 600;
+  }
+  &__link {
+    color: var(--text-dark-grey);
+    text-decoration: none;
+    &:hover {
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  }
+}

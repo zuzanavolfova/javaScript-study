@@ -1,0 +1,21 @@
+.button-primary {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  width: auto;
+  height: 36px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+button.clicked {
+  transform: scale(1.2);
+  background-color: var(--placeholder-color);
+}
