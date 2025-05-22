@@ -7,7 +7,7 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
 function isInputTextValid(cipher) {
-  let inputTextEl = document.getElementById("cipher");
+  const inputTextEl = document.getElementById("cipher");
   if (cipher.trim() === "") {
     addContentToUI(
       "Please enter a text to encrypt!",
@@ -17,12 +17,14 @@ function isInputTextValid(cipher) {
     inputTextEl.style.border = "1px solid red";
     return false;
   }
+
   inputTextEl.style.border = "1px solid var(--text-light-grey)";
   return true;
 }
 
 function isFactorRotationValid(factorRotation) {
-  let inputTextEl = document.getElementById("factorRotation");
+  const inputTextEl = document.getElementById("factorRotation");
+
   if (isNaN(factorRotation) || factorRotation === "") {
     addContentToUI(
       "Enter a valid number for the shift!",
@@ -31,6 +33,7 @@ function isFactorRotationValid(factorRotation) {
     inputTextEl.style.border = "1px solid red";
     return false;
   }
+
   inputTextEl.style.border = "1px solid var(--text-light-grey)";
   return true;
 }
