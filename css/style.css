@@ -8,6 +8,10 @@
   --light-background: #a7a3a333;
 }
 
+:root {
+  --border-radius: 6px;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
