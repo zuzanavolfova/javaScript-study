@@ -1,9 +1,10 @@
 @import "./colors.scss";
 @import "./variables.scss";
-@import "./projects.scss";
-@import "./description.scss";
-@import "./footer.scss";
-@import "./buttons.scss";
+@import "./includes/projects.scss";
+@import "./includes/description.scss";
+@import "./includes/footer.scss";
+@import "./includes/buttons.scss";
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
