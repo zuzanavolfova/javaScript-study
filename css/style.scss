@@ -143,8 +143,12 @@ button.clicked {
         border-radius: 4px;
       }
       &__output {
-        margin: auto;
+        margin: 16px auto;
+        font-weight: 600;
         text-align: center;
+        @media (min-width: 650px) {
+          margin: auto;
+        }
       }
     }
   }

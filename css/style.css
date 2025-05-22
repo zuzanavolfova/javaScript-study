@@ -166,8 +166,14 @@ button.clicked {
   border-radius: 4px;
 }
 .projects__card__container__output {
-  margin: auto;
+  margin: 16px auto;
+  font-weight: 600;
   text-align: center;
+}
+@media (min-width: 650px) {
+  .projects__card__container__output {
+    margin: auto;
+  }
 }
 
 .footer {
