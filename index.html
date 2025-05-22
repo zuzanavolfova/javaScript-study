@@ -38,7 +38,8 @@
                 >Caesar cipher</a
               ><button
                 class="projects__side-bar__item__button button-primary"
-                onclick="toggleCardVisibility('caesar-cipher')"
+                onclick="toggleCardVisibility('caesar-cipher')
+                document.getElementById('caesar-cipher').scrollIntoView({ behavior: 'smooth' });"
               >
                 Try
               </button>
