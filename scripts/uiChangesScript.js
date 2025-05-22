@@ -3,6 +3,14 @@ function addContentToUI(data, uiElement) {
   outputUI.innerHTML = data;
 }
 
+function changeCSSofElements(parent, selector, property, value) {
+  const el = parent.querySelectorAll(selector);
+  el.forEach((el) => {
+    el.value = "";
+    el.style[property] = value;
+  });
+}
+
 function closeAllCards() {
   let elements = document.querySelectorAll(".projects__card");
   elements.forEach((el) => (el.style.display = "none"));
