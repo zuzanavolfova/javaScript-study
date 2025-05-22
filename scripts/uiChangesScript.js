@@ -3,8 +3,14 @@ function addContentToUI(data, uiElement) {
   outputUI.innerHTML = data;
 }
 
+function removeContentFromUI(uiElement) {
+  const outputUI = document.querySelector(`${uiElement}`);
+  if (outputUI) outputUI.innerHTML = "";
+}
+
 function changeCSSofElements(parent, selector, property, value) {
   const el = parent.querySelectorAll(selector);
+
   el.forEach((el) => {
     el.value = "";
     el.style[property] = value;
@@ -19,6 +25,7 @@ function closeAllCards() {
 function toggleCardVisibility(uiElement) {
   const el = document.getElementById(uiElement);
   const isHidden = getComputedStyle(el).display === "none";
+
   changeCSSofElements(
     el,
     "input",
