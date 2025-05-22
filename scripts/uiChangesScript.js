@@ -19,7 +19,12 @@ function closeAllCards() {
 function toggleCardVisibility(uiElement) {
   const el = document.getElementById(uiElement);
   const isHidden = getComputedStyle(el).display === "none";
-
+  changeCSSofElements(
+    el,
+    "input",
+    "border",
+    "1px solid var(--text-light-grey)"
+  );
   closeAllCards();
 
   if (isHidden) {
