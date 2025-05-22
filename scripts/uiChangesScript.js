@@ -32,6 +32,8 @@ function toggleCardVisibility(uiElement) {
     "border",
     "1px solid var(--text-light-grey)"
   );
+
+  removeContentFromUI(`#${uiElement} .projects__card__container__output`);
   closeAllCards();
 
   if (isHidden) {
