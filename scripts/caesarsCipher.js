@@ -7,24 +7,31 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
 function isInputTextValid(cipher) {
+  let inputTextEl = document.getElementById("cipher");
   if (cipher.trim() === "") {
     addContentToUI(
       "Please enter a text to encrypt!",
       ".projects__card__container__output"
     );
+
+    inputTextEl.style.border = "1px solid red";
     return false;
   }
+  inputTextEl.style.border = "1px solid var(--text-light-grey)";
   return true;
 }
 
 function isFactorRotationValid(factorRotation) {
+  let inputTextEl = document.getElementById("factorRotation");
   if (isNaN(factorRotation) || factorRotation === "") {
     addContentToUI(
       "Enter a valid number for the shift!",
       ".projects__card__container__output"
     );
+    inputTextEl.style.border = "1px solid red";
     return false;
   }
+  inputTextEl.style.border = "1px solid var(--text-light-grey)";
   return true;
 }
 
