@@ -17,12 +17,12 @@ function changeCSSofElements(parent, selector, property, value) {
   });
 }
 
-function closeAllCards() {
+function closeAllProjectCards() {
   let elements = document.querySelectorAll(".projects__card");
   elements.forEach((el) => (el.style.display = "none"));
 }
 
-function closeAllCodeCards() {
+function closeAllCodeViewers() {
   let elements = document.querySelectorAll(".projects__code-card");
   elements.forEach((el) => (el.style.display = "none"));
   let buttons = document.querySelectorAll('[onclick*="toggleCodeVisibility"]');
@@ -42,8 +42,8 @@ function toggleCardVisibility(uiElement) {
   );
 
   removeContentFromUI(`#${uiElement} .projects__card__container__output`);
-  closeAllCards();
-  closeAllCodeCards();
+  closeAllProjectCards();
+  closeAllCodeViewers();
 
   if (isHidden) {
     el.style.display = "block";
@@ -100,8 +100,8 @@ async function toggleCodeVisibility(codeCardId) {
   const isHidden = getComputedStyle(codeCard).display === "none";
   const toggleButton = document.querySelector(`[aria-controls="${codeCardId}"]`);
   
-  closeAllCards();
-  closeAllCodeCards();
+  closeAllProjectCards();
+  closeAllCodeViewers();
   
   if (isHidden) {
     const filePath = codeFileMapping[codeCardId];
