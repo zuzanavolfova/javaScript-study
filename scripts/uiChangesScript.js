@@ -70,7 +70,10 @@ const codeFileMapping = {
   'pangram-code': 'scripts/hackerrankTraining/pangram.js',
   'search-position-code': 'scripts/hackerrankTraining/searchPositionOfSum.js',
   'sort-string-code': 'scripts/hackerrankTraining/sortStringNumbers.js',
-  'click-outside-code': 'scripts/webDevelopmentFunctionality/clickOutsideHandler.ts'
+  'click-outside-code': 'scripts/webDevelopmentFunctionality/clickOutsideHandler.ts',
+  'fizz-buzz-code': 'scripts/javaScript-training/FizzBuzz.js',
+  'reverse-text-code': 'scripts/reverseText.js',
+  'find-max-code': 'scripts/javaScript-training/findMax.js'
 };
 
 async function loadCodeFromFile(filePath) {
