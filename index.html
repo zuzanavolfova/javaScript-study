@@ -9,10 +9,11 @@
     <title>JavasScript Study</title>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <h1>JavaScript and TypeScript study project</h1>
     </header>
-    <main class="main">
+    <main class="main" id="main-content">
       <section class="description">
         <span
           >This project contains exercises for practicing JavaScript. The tasks
@@ -27,9 +28,9 @@
         >
       </section>
       <section class="projects">
-        <aside class="projects__side-bar">
+        <aside class="projects__side-bar" role="navigation" aria-label="Project navigation">
           <h2>GitHub</h2>
-          <span>See the code for each function:</span>
+          <p>See the code for each function:</p>
           <div>
             <div class="projects__side-bar__item">
               <a
@@ -40,6 +41,10 @@
                 class="projects__side-bar__item__button button-primary"
                 onclick="toggleCardVisibility('caesar-cipher')
                 document.getElementById('caesar-cipher').scrollIntoView({ behavior: 'smooth' });"
+                aria-label="Show Caesar cipher interactive demo"
+                aria-controls="caesar-cipher"
+                aria-expanded="false"
+                type="button"
               >
                 Try
               </button>
@@ -161,16 +166,19 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <div class="footer">
         <span class="footer__title"> Zuzana Volfová</span>
         <span> +420 728 881 941</span>
-        <a class="footer__link" href="mailto:zuzka.volfova@gmail.com"
+        <a class="footer__link" href="mailto:zuzka.volfova@gmail.com" aria-label="Send email to Zuzana Volfová"
           >zuzka.volfova@gmail.com</a
         >
         <a
           class="footer__link"
           href="https://www.linkedin.com/in/zuzana-volfová"
+          aria-label="Visit Zuzana Volfová's LinkedIn profile"
+          target="_blank"
+          rel="noopener noreferrer"
           >LinkedIn</a
         >
       </div>

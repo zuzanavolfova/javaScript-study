@@ -183,6 +183,51 @@ button.clicked {
   background-color: var(--placeholder-color);
 }
 
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #000000;
+    --text-dark-grey: #000000;
+    --text-medium-grey: #000000;
+    --light-grey: #000000;
+  }
+  
+  .projects__card {
+    border: 2px solid #000000;
+  }
+}
+
+.projects__side-bar a:focus,
+.footer__link:focus,
+.description a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

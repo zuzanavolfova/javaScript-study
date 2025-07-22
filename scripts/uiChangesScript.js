@@ -25,6 +25,7 @@ function closeAllCards() {
 function toggleCardVisibility(uiElement) {
   const el = document.getElementById(uiElement);
   const isHidden = getComputedStyle(el).display === "none";
+  const toggleButton = document.querySelector(`[aria-controls="${uiElement}"]`);
 
   changeCSSofElements(
     el,
@@ -38,5 +39,14 @@ function toggleCardVisibility(uiElement) {
 
   if (isHidden) {
     el.style.display = "block";
+    if (toggleButton) {
+      toggleButton.setAttribute('aria-expanded', 'true');
+      toggleButton.setAttribute('aria-label', 'Hide Caesar cipher interactive demo');
+    }
+  } else {
+    if (toggleButton) {
+      toggleButton.setAttribute('aria-expanded', 'false');
+      toggleButton.setAttribute('aria-label', 'Show Caesar cipher interactive demo');
+    }
   }
 }
