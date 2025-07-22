@@ -8,92 +8,271 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>JavasScript Study</title>
   </head>
+
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
       <h1>JavaScript and TypeScript study project</h1>
     </header>
+    
     <main class="main" id="main-content">
       <section class="description">
-        <span
-          >This project contains exercises for practicing JavaScript. The tasks
-          are solutions to assignments from HackerRank.</span
-        >
+        <span>
+          This project contains exercises for practicing JavaScript. The tasks
+          are solutions to assignments from HackerRank.
+        </span>
         <a
           href="https://github.com/zuzanavolfova/javaScript-study"
           role="link"
           aria-label="Visit GitHub repository"
         >
-          GitHub repository</a
-        >
+          GitHub repository
+        </a>
       </section>
+      
       <section class="projects">
         <aside class="projects__side-bar" role="navigation" aria-label="Project navigation">
           <h2>GitHub</h2>
           <p>See the code for each function:</p>
+          
           <div>
+            <!-- Caesar Cipher - Interactive Demo -->
             <div class="projects__side-bar__item">
-              <a
-                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/caesarsCipher.js"
-                target="_blank"
-                >Caesar cipher</a
-              ><button
+              <div class="projects__side-bar__item__row">
+                <a
+                  href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/caesarsCipher.js"
+                  target="_blank"
+                >
+                  Caesar cipher
+                </a>
+                <button
+                  class="projects__side-bar__item__button button-primary"
+                  onclick="toggleCardVisibility('caesar-cipher'); document.getElementById('caesar-cipher').scrollIntoView({ behavior: 'smooth' });"
+                  aria-label="Show Caesar cipher interactive demo"
+                  aria-controls="caesar-cipher"
+                  aria-expanded="false"
+                  type="button"
+                >
+                  Try
+                </button>
+              </div>
+              <button
                 class="projects__side-bar__item__button button-primary"
-                onclick="toggleCardVisibility('caesar-cipher')
-                document.getElementById('caesar-cipher').scrollIntoView({ behavior: 'smooth' });"
-                aria-label="Show Caesar cipher interactive demo"
-                aria-controls="caesar-cipher"
+                onclick="toggleCodeVisibility('caesar-cipher-code')"
+                aria-label="Show Caesar cipher code"
+                aria-controls="caesar-cipher-code"
                 aria-expanded="false"
                 type="button"
               >
-                Try
+                See code
               </button>
             </div>
-            <a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/checkIfContainsPattern.js"
-              target="_blank"
-              >Check if contains pattern</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/counterChangesPattern.js"
-              target="_blank"
-              >Counter changes pattern</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/dayOfProgramer.js"
-              target="_blank"
-              >Day of programer</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/countPairs.js"
-              target="_blank"
-              >Count Pairs</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/findMissingElements.js"
-              target="_blank"
-              >Find missing elements</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/insertionToSortArray.js"
-              target="_blank"
-              >Insertion to sort array</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/pangram.js"
-              >Pangram</a
-            ><a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/searchPositionOfSum.js"
-              target="_blank"
-              >Search position of sum</a
-            >
-            <a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/sortStringNumbers.js"
-              target="_blank"
-              >Sort string numbers</a
-            >
-            <a
-              href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/webDevelopmentFunctionality/clickOutsideHandler.ts"
-              target="_blank"
-              >Click outside handler (.ts)</a
-            >
+
+            <!-- Check if contains pattern -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/checkIfContainsPattern.js"
+                target="_blank"
+              >
+                Check if contains pattern
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('check-pattern-code')"
+                aria-label="Show Check if contains pattern code"
+                aria-controls="check-pattern-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Counter changes pattern -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/counterChangesPattern.js"
+                target="_blank"
+              >
+                Counter changes pattern
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('counter-changes-code')"
+                aria-label="Show Counter changes pattern code"
+                aria-controls="counter-changes-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Day of programmer -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/dayOfProgramer.js"
+                target="_blank"
+              >
+                Day of programer
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('day-programmer-code')"
+                aria-label="Show Day of programmer code"
+                aria-controls="day-programmer-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Count Pairs -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/countPairs.js"
+                target="_blank"
+              >
+                Count Pairs
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('count-pairs-code')"
+                aria-label="Show Count Pairs code"
+                aria-controls="count-pairs-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Find missing elements -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/findMissingElements.js"
+                target="_blank"
+              >
+                Find missing elements
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('find-missing-code')"
+                aria-label="Show Find missing elements code"
+                aria-controls="find-missing-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Insertion to sort array -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/insertionToSortArray.js"
+                target="_blank"
+              >
+                Insertion to sort array
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('insertion-sort-code')"
+                aria-label="Show Insertion to sort array code"
+                aria-controls="insertion-sort-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Pangram -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/pangram.js"
+                target="_blank"
+              >
+                Pangram
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('pangram-code')"
+                aria-label="Show Pangram code"
+                aria-controls="pangram-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Search position of sum -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/searchPositionOfSum.js"
+                target="_blank"
+              >
+                Search position of sum
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('search-position-code')"
+                aria-label="Show Search position of sum code"
+                aria-controls="search-position-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Sort string numbers -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/hackerrankTraining/sortStringNumbers.js"
+                target="_blank"
+              >
+                Sort string numbers
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('sort-string-code')"
+                aria-label="Show Sort string numbers code"
+                aria-controls="sort-string-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
+
+            <!-- Click outside handler -->
+            <div class="projects__side-bar__item">
+              <a
+                href="https://github.com/zuzanavolfova/javaScript-study/blob/main/scripts/webDevelopmentFunctionality/clickOutsideHandler.ts"
+                target="_blank"
+              >
+                Click outside handler (.ts)
+              </a>
+              <button
+                class="projects__side-bar__item__button button-primary"
+                onclick="toggleCodeVisibility('click-outside-code')"
+                aria-label="Show Click outside handler code"
+                aria-controls="click-outside-code"
+                aria-expanded="false"
+                type="button"
+              >
+                See code
+              </button>
+            </div>
           </div>
         </aside>
+
         <div class="projects__cards">
+          <!-- Caesar Cipher Interactive Demo -->
           <div
             class="projects__card"
             id="caesar-cipher"
@@ -122,16 +301,17 @@
                     aria-required="true"
                     autocomplete="off"
                   />
-                  <label for="cipher" class="form-label" id="cipher-label"
-                    >Insert cipher to be encrypted</label
-                  >
+                  <label for="cipher" class="form-label" id="cipher-label">
+                    Insert cipher to be encrypted
+                  </label>
                 </div>
+                
                 <div class="form-group">
                   <input
                     type="number"
                     name="factorRotation"
                     id="factorRotation"
-                    placeholder="Insert factor rotaion"
+                    placeholder="Insert factor rotation"
                     class="projects__card__container__input"
                     aria-describedby="factorRotation-label"
                     aria-required="true"
@@ -142,9 +322,11 @@
                     for="factorRotation"
                     class="form-label"
                     id="factorRotation-label"
-                    >Insert factor rotation</label
                   >
+                    Insert factor rotation
+                  </label>
                 </div>
+                
                 <button
                   type="button"
                   class="button-primary"
@@ -155,6 +337,7 @@
                   Encrypt
                 </button>
               </form>
+              
               <div
                 class="projects__card__container__output"
                 aria-live="polite"
@@ -163,27 +346,92 @@
               ></div>
             </div>
           </div>
+
+          <!-- Code Display Cards -->
+          <div class="projects__code-card" id="caesar-cipher-code" style="display: none">
+            <h3>Caesar Cipher</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="check-pattern-code" style="display: none">
+            <h3>Check if contains pattern</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="pangram-code" style="display: none">
+            <h3>Pangram</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="counter-changes-code" style="display: none">
+            <h3>Counter changes pattern</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="day-programmer-code" style="display: none">
+            <h3>Day of programmer</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="count-pairs-code" style="display: none">
+            <h3>Count Pairs</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="find-missing-code" style="display: none">
+            <h3>Find missing elements</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="insertion-sort-code" style="display: none">
+            <h3>Insertion to sort array</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="search-position-code" style="display: none">
+            <h3>Search position of sum</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="sort-string-code" style="display: none">
+            <h3>Sort string numbers</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
+
+          <div class="projects__code-card" id="click-outside-code" style="display: none">
+            <h3>Click outside handler (.ts)</h3>
+            <pre><code>Loading code...</code></pre>
+          </div>
         </div>
       </section>
     </main>
+
     <footer role="contentinfo">
       <div class="footer">
-        <span class="footer__title"> Zuzana Volfová</span>
-        <span> +420 728 881 941</span>
-        <a class="footer__link" href="mailto:zuzka.volfova@gmail.com" aria-label="Send email to Zuzana Volfová"
-          >zuzka.volfova@gmail.com</a
+        <span class="footer__title">Zuzana Volfová</span>
+        <span>+420 728 881 941</span>
+        <a
+          class="footer__link"
+          href="mailto:zuzka.volfova@gmail.com"
+          aria-label="Send email to Zuzana Volfová"
         >
+          zuzka.volfova@gmail.com
+        </a>
         <a
           class="footer__link"
           href="https://www.linkedin.com/in/zuzana-volfová"
           aria-label="Visit Zuzana Volfová's LinkedIn profile"
           target="_blank"
           rel="noopener noreferrer"
-          >LinkedIn</a
         >
+          LinkedIn
+        </a>
       </div>
     </footer>
+
     <script src="scripts/uiChangesScript.js"></script>
     <script src="scripts/caesarsCipher.js"></script>
+        <script src="scripts/reverseText.js"></script>
+
   </body>
 </html>
