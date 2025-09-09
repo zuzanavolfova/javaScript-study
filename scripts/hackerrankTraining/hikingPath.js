@@ -1,4 +1,4 @@
-//TASK hiking path
+//TASK Hiking Path
 //An avid hiker keeps meticulous records of their hikes. During the last hike that took exactly  steps, for every step it was noted if it was an uphill, , or a downhill,  step. Hikes always start and end at sea level, and each step up or down represents a  unit change in altitude. Given the sequence of up and down steps during a hike, find and print the number of valleys walked through.
 
 function hikingPath(steps, path) {
@@ -16,7 +16,5 @@ function hikingPath(steps, path) {
       numberOfValleys++;
     }
   }
-  return console.log(numberOfValleys);
+  return numberOfValleys;
 }
-
-hikingPath(8, "UDDDUDUUDDUDDDUDUUDUDDDUDUUDDUDDDUDUUDD");
